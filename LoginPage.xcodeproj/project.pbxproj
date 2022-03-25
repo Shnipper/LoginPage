@@ -14,6 +14,9 @@
 		A52CA65B27E60C1E00FC32E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52CA65A27E60C1E00FC32E6 /* Assets.xcassets */; };
 		A52CA65E27E60C1E00FC32E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52CA65C27E60C1E00FC32E6 /* LaunchScreen.storyboard */; };
 		A52CA66627E60F5B00FC32E6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CA66527E60F5B00FC32E6 /* WelcomeViewController.swift */; };
+		A5A668B927ECE8CA00B52991 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A668B827ECE8CA00B52991 /* AboutMeViewController.swift */; };
+		A5A668BB27EDB5C000B52991 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A668BA27EDB5C000B52991 /* DescriptionViewController.swift */; };
+		A5F6271227EB27A30031D0D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F6271127EB27A30031D0D8 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		A52CA65D27E60C1E00FC32E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A52CA65F27E60C1E00FC32E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A52CA66527E60F5B00FC32E6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A5A668B827ECE8CA00B52991 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		A5A668BA27EDB5C000B52991 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		A5F6271127EB27A30031D0D8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A51669D427EB25E900676F29 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A52CA65527E60C1D00FC32E6 /* LoginViewController.swift */,
+				A52CA66527E60F5B00FC32E6 /* WelcomeViewController.swift */,
+				A5A668B827ECE8CA00B52991 /* AboutMeViewController.swift */,
+				A5A668BA27EDB5C000B52991 /* DescriptionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A51669D527EB25F900676F29 /* Stotryboards */ = {
+			isa = PBXGroup;
+			children = (
+				A52CA65727E60C1D00FC32E6 /* Main.storyboard */,
+				A52CA65C27E60C1E00FC32E6 /* LaunchScreen.storyboard */,
+			);
+			path = Stotryboards;
+			sourceTree = "<group>";
+		};
+		A51669D627EB269200676F29 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A52CA65F27E60C1E00FC32E6 /* Info.plist */,
+				A52CA65327E60C1D00FC32E6 /* SceneDelegate.swift */,
+				A52CA65127E60C1D00FC32E6 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A51669D727EB26AA00676F29 /* Resorses */ = {
+			isa = PBXGroup;
+			children = (
+				A52CA65A27E60C1E00FC32E6 /* Assets.xcassets */,
+			);
+			path = Resorses;
+			sourceTree = "<group>";
+		};
 		A52CA64527E60C1D00FC32E6 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +102,21 @@
 		A52CA65027E60C1D00FC32E6 /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
-				A52CA65127E60C1D00FC32E6 /* AppDelegate.swift */,
-				A52CA65327E60C1D00FC32E6 /* SceneDelegate.swift */,
-				A52CA65527E60C1D00FC32E6 /* LoginViewController.swift */,
-				A52CA66527E60F5B00FC32E6 /* WelcomeViewController.swift */,
-				A52CA65727E60C1D00FC32E6 /* Main.storyboard */,
-				A52CA65A27E60C1E00FC32E6 /* Assets.xcassets */,
-				A52CA65C27E60C1E00FC32E6 /* LaunchScreen.storyboard */,
-				A52CA65F27E60C1E00FC32E6 /* Info.plist */,
+				A51669D427EB25E900676F29 /* ViewControllers */,
+				A5F6271027EB27830031D0D8 /* Models */,
+				A51669D527EB25F900676F29 /* Stotryboards */,
+				A51669D627EB269200676F29 /* App */,
+				A51669D727EB26AA00676F29 /* Resorses */,
 			);
 			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		A5F6271027EB27830031D0D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5F6271127EB27A30031D0D8 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52CA65627E60C1D00FC32E6 /* LoginViewController.swift in Sources */,
+				A5A668BB27EDB5C000B52991 /* DescriptionViewController.swift in Sources */,
 				A52CA66627E60F5B00FC32E6 /* WelcomeViewController.swift in Sources */,
 				A52CA65227E60C1D00FC32E6 /* AppDelegate.swift in Sources */,
+				A5F6271227EB27A30031D0D8 /* User.swift in Sources */,
+				A5A668B927ECE8CA00B52991 /* AboutMeViewController.swift in Sources */,
 				A52CA65427E60C1D00FC32E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,10 +343,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B346NGGCL4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginPage/Info.plist;
+				INFOPLIST_FILE = LoginPage/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,6 +362,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Com.VoloshenkoEV.LoginPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -319,10 +374,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B346NGGCL4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginPage/Info.plist;
+				INFOPLIST_FILE = LoginPage/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,6 +393,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Com.VoloshenkoEV.LoginPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
